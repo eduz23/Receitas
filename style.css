@@ -41,3 +41,23 @@ blockquote{max-width:800px;margin:40px auto;padding:28px;border-left:4px solid v
 footer{background:#0e2117;color:#a9bdb0;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem}.footer-inner strong{color:#fff}
 @media(max-width:900px){.hero-grid,.offer-card{grid-template-columns:1fr}.hero-copy{text-align:center}.lead{margin-left:auto;margin-right:auto}.trust-row{justify-content:center}.hero-visual{min-height:340px}.feature-grid{grid-template-columns:repeat(2,1fr)}.bonus-grid,.testimonial-grid{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.offer-side{display:none}}
 @media(max-width:600px){.container{width:min(100% - 26px,1120px)}.section{padding:64px 0}.hero{padding:48px 0 60px}.feature-grid,.number-grid,.gallery-grid{grid-template-columns:1fr}.food-collage{height:330px}.food-1{width:76%;height:80%}.food-2{width:52%;height:55%}.food-3{width:36%;height:34%}.offer-card{padding:30px 22px;border-radius:22px}.btn{width:100%}.trust-row span{width:100%;text-align:center}.gallery-img{height:380px}}
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.countdown strong {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 28px;
+  color: #a9f2c1;
+  letter-spacing: 1px;
+}
