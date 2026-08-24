@@ -11,17 +11,27 @@ document.querySelectorAll('a[href="#oferta"]').forEach(btn => {
 let tempo = 15 * 60;
 
 const timer = setInterval(() => {
+
   const minutos = Math.floor(tempo / 60);
   const segundos = tempo % 60;
 
-  document.getElementById('timer').textContent =
-    `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+  const elemento = document.getElementById('timer');
+
+  if (elemento) {
+    elemento.textContent =
+      `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+  }
 
   if (tempo <= 0) {
     clearInterval(timer);
-    document.getElementById('timer').textContent = '00:00';
+
+    if (elemento) {
+      elemento.textContent = '00:00';
+    }
+
     return;
   }
 
   tempo--;
-});
+
+}, 1000);
